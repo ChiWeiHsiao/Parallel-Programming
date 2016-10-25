@@ -13,8 +13,8 @@ int main(int argc, char *argv[]){
 
   for(int i = 0; i < total; i++){
     //create random (x.y) between 1 ~ -1
-    double x = (double)(rand() % RAND_MAX) / RAND_MAX - (double)(rand() % RAND_MAX) / RAND_MAX;
-    double y = (double)(rand() % RAND_MAX) / RAND_MAX - (double)(rand() % RAND_MAX) / RAND_MAX;
+    double x = 2 * (double)(rand() % RAND_MAX) / RAND_MAX - 1;
+    double y = 2 * (double)(rand() % RAND_MAX) / RAND_MAX - 1;
     cout << i <<": "<<"x=" <<x <<"; y=" << y<< endl;
     double r = x*x + y*y;
     if(r <= 1)  in_circle++;
