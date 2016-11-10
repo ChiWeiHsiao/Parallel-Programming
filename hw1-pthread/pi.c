@@ -63,8 +63,6 @@ int main(int argc, char *argv[]){
   printf("%f\n", pi);
 
   pthread_mutex_destroy(&gLock);
-  free(threads);
-
 
   return 0;
 }
